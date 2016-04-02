@@ -27,7 +27,6 @@ emailaddress = "emailaccount@DOMAIN.COM"
 password = "yoursupersecretpasswordinplaintext"
 
 M = imaplib.IMAP4_SSL("SERVER.DOMAIN.COM", 993)
-M.login(emailaddress, password)
 ```
 
 #####Configuring mailnotifier.sh
