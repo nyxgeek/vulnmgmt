@@ -17,7 +17,6 @@ the mail that is pertinent to you, and forward it on to an email of your choosin
 3. Create your list of keywords in match_list.txt -- some examples are provided
 4. Schedule mailController.sh to run every 15 minutes via crontab
 
-
 ---
 
 #####Configuring mailkeeper.py
@@ -28,6 +27,14 @@ password = "yoursupersecretpasswordinplaintext"
 
 M = imaplib.IMAP4_SSL("SERVER.DOMAIN.COM", 993)
 ```
+
+If you want to save copies of all processed mail on the IMAP server, create an IMAP folder
+named 'archive' and uncomment the following line:
+
+```
+#      M.copy(num, 'archive')
+```
+
 
 #####Configuring mailnotifier.sh
 Edit the following line:
