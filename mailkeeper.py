@@ -63,6 +63,6 @@ for num in data[0].split():
       target.close()
 
 
-      M.copy(num, 'archive')
+#      M.copy(num, 'archive')
       M.store(num, '+FLAGS', '\\Deleted')
       M.expunge()
