@@ -1,7 +1,0 @@
-Acrobat Reader
-Google Chrome
-Internet Explorer
-Mozilla Firefox
-Oracle Java
-Safari
-Sun Java
